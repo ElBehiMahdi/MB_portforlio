@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Junior to Senior: Lessons Learned | [Your Name]</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .blog-post { max-width: 800px; margin: 0 auto; padding: 120px 24px 80px; }
+        .blog-post-header { margin-bottom: 48px; }
+        .blog-post-meta { display: flex; gap: 16px; align-items: center; margin-bottom: 16px; }
+        .blog-post-meta time { font-family: var(--font-mono); color: var(--text-secondary); font-size: 0.9rem; }
+        .blog-post h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); color: var(--text-heading); margin-bottom: 16px; line-height: 1.2; }
+        .blog-post-content { font-size: 1.1rem; line-height: 1.8; }
+        .blog-post-content h2 { color: var(--text-heading); margin: 40px 0 20px; font-size: 1.5rem; }
+        .blog-post-content p { margin-bottom: 20px; color: var(--text-primary); }
+        .blog-post-content ul { margin: 20px 0; padding-left: 24px; }
+        .blog-post-content li { margin-bottom: 12px; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 0.9rem; margin-bottom: 32px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">&lt;Dev /&gt;</a>
+            <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="../index.html#blog" class="nav-link">Blog</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                <li><button class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="blog-post">
+        <a href="../index.html#blog" class="back-link">&larr; Back to posts</a>
+        <div class="blog-post-header">
+            <div class="blog-post-meta">
+                <time>February 10, 2026</time>
+                <span class="blog-tag">Career</span>
+            </div>
+            <h1>From Junior to Senior: Lessons Learned</h1>
+        </div>
+        <div class="blog-post-content">
+            <p>After years of growth in the software industry, I've distilled my journey into actionable lessons. Whether you're a junior developer or aspiring to reach the next level, here's what I wish I knew earlier.</p>
+
+            <h2>1. Communication > Code</h2>
+            <p>The best code is useless if you can't explain why it matters. Learn to communicate technical concepts to non-technical stakeholders. Write clear documentation and PR descriptions.</p>
+
+            <h2>2. Say "I Don't Know" More Often</h2>
+            <p>Senior developers aren't those who know everything -- they're those who know how to find answers. Being comfortable with uncertainty is a superpower.</p>
+
+            <h2>3. Build in Public</h2>
+            <p>Share your work, write blog posts, contribute to open source. It builds your reputation, helps others, and accelerates your learning through feedback.</p>
+
+            <h2>4. Focus on Fundamentals</h2>
+            <p>Frameworks come and go, but fundamentals last. Deep understanding of data structures, algorithms, system design, and networking will serve you far longer than knowing the latest framework API.</p>
+
+            <h2>5. Mentor Others</h2>
+            <p>Teaching is the best way to learn. When you explain concepts to junior developers, you deepen your own understanding and develop leadership skills.</p>
+
+            <h2>6. Take Care of Yourself</h2>
+            <p>Burnout is real. Take breaks, exercise, have hobbies outside of coding. A healthy developer is a productive developer in the long run.</p>
+
+            <h2>7. The Journey Never Ends</h2>
+            <p>Reaching "senior" doesn't mean you've arrived. The tech industry evolves constantly. Stay curious, keep learning, and embrace the journey.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>Built with &lt;3 using HTML, CSS & JavaScript</p>
+            <p>&copy; <span id="year"></span> [Your Name]. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

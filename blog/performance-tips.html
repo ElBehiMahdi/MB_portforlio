@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Performance Tips for Modern Web Apps | [Your Name]</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .blog-post { max-width: 800px; margin: 0 auto; padding: 120px 24px 80px; }
+        .blog-post-header { margin-bottom: 48px; }
+        .blog-post-meta { display: flex; gap: 16px; align-items: center; margin-bottom: 16px; }
+        .blog-post-meta time { font-family: var(--font-mono); color: var(--text-secondary); font-size: 0.9rem; }
+        .blog-post h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); color: var(--text-heading); margin-bottom: 16px; line-height: 1.2; }
+        .blog-post-content { font-size: 1.1rem; line-height: 1.8; }
+        .blog-post-content h2 { color: var(--text-heading); margin: 40px 0 20px; font-size: 1.5rem; }
+        .blog-post-content p { margin-bottom: 20px; color: var(--text-primary); }
+        .blog-post-content ul, .blog-post-content ol { margin: 20px 0; padding-left: 24px; }
+        .blog-post-content li { margin-bottom: 12px; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 0.9rem; margin-bottom: 32px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">&lt;Dev /&gt;</a>
+            <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="../index.html#blog" class="nav-link">Blog</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                <li><button class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="blog-post">
+        <a href="../index.html#blog" class="back-link">&larr; Back to posts</a>
+        <div class="blog-post-header">
+            <div class="blog-post-meta">
+                <time>March 28, 2026</time>
+                <span class="blog-tag">Best Practices</span>
+            </div>
+            <h1>10 Performance Tips for Modern Web Apps</h1>
+        </div>
+        <div class="blog-post-content">
+            <p>Web performance directly impacts user experience, conversion rates, and SEO. Here are 10 practical tips to make your web applications lightning fast.</p>
+
+            <h2>1. Lazy Load Images</h2>
+            <p>Use the native <code>loading="lazy"</code> attribute on images below the fold. This prevents images from loading until they're about to enter the viewport.</p>
+
+            <h2>2. Minimize JavaScript Bundle Size</h2>
+            <p>Analyze your bundle with tools like Webpack Bundle Analyzer. Remove unused dependencies and tree-shake what you can.</p>
+
+            <h2>3. Use Code Splitting</h2>
+            <p>Split your code by routes or features. Users only download what they need for the current page, reducing initial load time.</p>
+
+            <h2>4. Implement Caching Strategies</h2>
+            <p>Use service workers and Cache API to cache static assets. Set proper HTTP cache headers for your server responses.</p>
+
+            <h2>5. Optimize Critical CSS</h2>
+            <p>Inline critical CSS for above-the-fold content. Defer non-critical styles to reduce render-blocking resources.</p>
+
+            <h2>6. Compress and Optimize Assets</h2>
+            <p>Use modern image formats like WebP and AVIF. Compress CSS, JS, and HTML with Gzip or Brotli.</p>
+
+            <h2>7. Use a CDN</h2>
+            <p>Deploy your static assets to a Content Delivery Network. This serves content from edge locations closest to your users.</p>
+
+            <h2>8. Reduce Third-Party Scripts</h2>
+            <p>Each third-party script adds overhead. Audit and remove unnecessary ones, and load essential ones asynchronously.</p>
+
+            <h2>9. Preconnect to Important Origins</h2>
+            <p>Use <code>&lt;link rel="preconnect"&gt;</code> to establish early connections to servers you'll need for fonts, APIs, or CDNs.</p>
+
+            <h2>10. Measure and Monitor</h2>
+            <p>Use Lighthouse, WebPageTest, and Real User Monitoring (RUM) to continuously measure your performance. Set budgets and alert when they're exceeded.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>Built with &lt;3 using HTML, CSS & JavaScript</p>
+            <p>&copy; <span id="year"></span> [Your Name]. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of [Your Name] - Software Developer">
+    <meta name="keywords" content="developer, software engineer, portfolio">
+    <title>[Your Name] | Software Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">&lt;Dev /&gt;</a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p class="hero-greeting">Hi, my name is</p>
+                    <h1 class="hero-name">[Your Name].</h1>
+                    <h2 class="hero-title">I build things for the web.</h2>
+                    <p class="hero-description">
+                        I'm a software developer specializing in building exceptional digital experiences.
+                        Currently focused on creating accessible, human-centered products that make a difference.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#experience" class="btn btn-outline">View Resume</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <div class="placeholder-avatar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-number">01.</span>
+                    Skills & Technologies
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">Astro</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">FastAPI</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & DevOps</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-number">02.</span>
+                    Where I've Worked
+                </h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Senior Software Engineer</h3>
+                                <span class="timeline-company">@ Tech Company</span>
+                            </div>
+                            <time class="timeline-date">Jan 2023 - Present</time>
+                            <ul class="timeline-description">
+                                <li>Led development of microservices architecture serving 1M+ users</li>
+                                <li>Improved application performance by 40% through code optimization</li>
+                                <li>Mentored junior developers and conducted code reviews</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Software Engineer</h3>
+                                <span class="timeline-company">@ Startup Inc.</span>
+                            </div>
+                            <time class="timeline-date">Mar 2021 - Dec 2022</time>
+                            <ul class="timeline-description">
+                                <li>Built full-stack web applications using React and Node.js</li>
+                                <li>Implemented CI/CD pipelines reducing deployment time by 60%</li>
+                                <li>Collaborated with cross-functional teams on product features</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Junior Developer</h3>
+                                <span class="timeline-company">@ Digital Agency</span>
+                            </div>
+                            <time class="timeline-date">Jun 2019 - Feb 2021</time>
+                            <ul class="timeline-description">
+                                <li>Developed responsive websites for 20+ clients</li>
+                                <li>Created reusable component libraries reducing dev time by 30%</li>
+                                <li>Participated in agile sprints and client presentations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-number">03.</span>
+                    Recent Posts
+                </h2>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <time>Apr 15, 2026</time>
+                                <span class="blog-tag">Tutorial</span>
+                            </div>
+                            <h3><a href="blog/getting-started-with-astro.html">Getting Started with Astro: A Beginner's Guide</a></h3>
+                            <p>Learn how to build blazing-fast websites with Astro, the modern static site generator that ships zero JavaScript by default.</p>
+                            <a href="blog/getting-started-with-astro.html" class="read-more">Read more &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <time>Mar 28, 2026</time>
+                                <span class="blog-tag">Best Practices</span>
+                            </div>
+                            <h3><a href="blog/performance-tips.html">10 Performance Tips for Modern Web Apps</a></h3>
+                            <p>Practical tips to optimize your web applications for speed, from lazy loading to efficient state management.</p>
+                            <a href="blog/performance-tips.html" class="read-more">Read more &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <time>Feb 10, 2026</time>
+                                <span class="blog-tag">Career</span>
+                            </div>
+                            <h3><a href="blog/career-advice.html">From Junior to Senior: Lessons Learned</a></h3>
+                            <p>Key insights and actionable advice from my journey from a junior developer to a senior engineering role.</p>
+                            <a href="blog/career-advice.html" class="read-more">Read more &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <p class="contact-overline">04. What's Next?</p>
+                    <h2 class="contact-title">Get In Touch</h2>
+                    <p class="contact-description">
+                        I'm currently open to new opportunities. Whether you have a question, a project idea,
+                        or just want to say hi, I'll do my best to get back to you!
+                    </p>
+                    <div class="contact-actions">
+                        <a href="mailto:your.email@example.com" class="btn btn-primary btn-large">Say Hello</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 2.958-1.096.863 1.141 2.112 1.808 3.457 1.838.287-.37.543-.763.735-1.147-2.582-.585-5.31-1.292-5.31-2.896 0-.64.229-1.173.61-1.591-.061-.15-.264-.756.058-1.575 0 0 1.767-.322 3.812 1.038 1.104-.307 2.285-.465 3.474-.473.144 0 .286.006.43.018.273-.378.535-.746.738-1.047-2.272-.648-3.813-.81-4.29-.997z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter/X">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:your.email@example.com" class="social-link" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>Built with &lt;3 using HTML, CSS & JavaScript</p>
+            <p>&copy; <span id="year"></span> [Your Name]. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
